@@ -7,11 +7,8 @@ const Contactinfo = () => {
       <div className="grid lg:grid-cols-2 gap-8 items-center">
         {/* Left Section - Contact Information */}
         <div>
-          <h2 className="text-gray-400 text-3xl font-light mb-2">
-            Contact
-          </h2>
-          <h1 className="text-4xl font-bold mb-6">Information</h1>
-  
+        <div className="text-[#bdbdbd] text-[64px] font-light font-['Roboto'] leading-[64px]">Contact</div>
+        <div className="text-[#333333] text-[64px] font-bold font-['Roboto'] leading-[64px]">Information</div>
           <p className="font-semibold text-lg">Company Name</p>
           <p className="text-gray-600 mb-4">
             1234 Sample Street, Austin, Texas 76401

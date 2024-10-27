@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Contact = () => {
   return (
    <section>
     <div className="w-[1170px] h-[603px] relative left-[120px]">
-  <div className="left-0 top-0 absolute text-[#bdbdbd] text-[64px] font-light font-['Roboto'] leading-[64px]">Contact Us</div>
+  <Link href="#"><div className="left-0 top-0 absolute text-[#bdbdbd] text-[64px] font-light font-['Roboto'] leading-[64px]">Contact Us</div></Link>
   <img className="w-[749px] h-[369px] left-[421px] top-[86px] absolute" src="/image 12.png" />
   <div className="w-[221.81px] h-[71px] left-0 top-[532px] absolute">
     <div className="w-[222px] h-[71px] left-0 top-0 absolute bg-[#333333]" />
