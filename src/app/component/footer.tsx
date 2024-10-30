@@ -3,7 +3,6 @@ import Shape from '/shape.png'
 import Shape1 from '/shape.png'
 import Shape2 from '/shape.png'
 import Shape3 from '/shape.png'
-
 import React from 'react'
 
 const Footer = () => {
@@ -52,9 +51,6 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-4">Social Media</h3>
           <div className="flex space-x-4 text-xl">
-          
-          
-          
           <Image className=" hover:text-white transition" src={Shape} alt='' width={10} height={10}/>
           <Image className=" hover:text-white transition" src={Shape1} alt='' width={18} height={10}/>
           <Image className=" hover:text-white transition" src={Shape2} alt='' width={18} height={10}/>
@@ -64,7 +60,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className=" border-gray-700 mt-8 pt-4 text-center text-sm text-gray-500">
+      <div className=" border-gray-700 mt-8 pt-4 text-center text-sm text-gray-200">
         © 2021 All Rights Reserved
       </div>
     </footer>
