@@ -33,7 +33,7 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4">Contacts</h3>
           <ul className="space-y-2">
             <li className="flex items-center space-x-2">
-              <span className=" text-white"><Image src="/vector1.png" alt="location" width={10} height={15}/></span>
+              <span className=" text-white"><Image src="/vector1.png" alt="location" width={10} height={15} /></span>
               <span>1234 Sample Street, <br /> Austin, Texas 78704</span>
             </li>
             <li className="flex items-center space-x-2">
@@ -41,7 +41,7 @@ const Footer = () => {
               <span>512.333.2222</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="material-icons text-white"><Image src="/vector2.png" alt="email" width={15} height={10}/></span>
+              <span className="material-icons text-white"><Image src="/vector2.png" alt="email" width={15} height={10} /></span>
               <span>sampleemail@gmail.com</span>
             </li>
           </ul>
@@ -51,10 +51,10 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-4">Social Media</h3>
           <div className="flex space-x-4 text-xl">
-          <Image className=" hover:text-white transition" src={Shape} alt='' width={10} height={10}/>
-          <Image className=" hover:text-white transition" src={Shape1} alt='' width={18} height={10}/>
-          <Image className=" hover:text-white transition" src={Shape2} alt='' width={18} height={10}/>
-          <Image className=" hover:text-white transition" src={Shape3} alt='' width={18} height={10}/>
+          <Image className=" hover:text-white transition" src={Shape} alt='' width={10} height={10} />
+          <Image className=" hover:text-white transition" src={Shape1} alt='' width={18} height={10} />
+          <Image className=" hover:text-white transition" src={Shape2} alt='' width={18} height={10} />
+          <Image className=" hover:text-white transition" src={Shape3} alt='' width={18} height={10} />
           </div>
         </div>
       </div>
