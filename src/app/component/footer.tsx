@@ -1,12 +1,9 @@
 import Image from 'next/image'
-<<<<<<< HEAD
 import Shape from '/shape.png'
 import Shape1 from '/shape.png'
 import Shape2 from '/shape.png'
 import Shape3 from '/shape.png'
 
-=======
->>>>>>> 3275ba9bc731cc801daaa5b484d578c8ece555c2
 import React from 'react'
 
 const Footer = () => {
