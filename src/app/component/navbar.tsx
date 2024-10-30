@@ -1,26 +1,72 @@
-import React from "react";
 
+ "use client"
+// export default Navbar;
+import React, { useState } from "react";
 import Link from "next/link";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Using icons for the hamburger and close buttons
 
 const Navbar = () => {
-  return (
-    
-     <div className="Component1 w-96 h-24 relative ">
-  <div className="Rectangle20 w-96 h-24 left-0 top-0 absolute"></div>
-  <div className="Group11 w-16 h-11 left-[135px] top-[29.14px] absolute">
-    <img src="/Group 11.png" alt="" />
-    <div className="Group8 w-16 h-10 left-[1.45px] top-[-0px] absolute"></div>
-  </div>
-  <Link href="/"> <div className="Main w-16 h-3 left-[549px] top-[44.69px] absolute text-zinc-800 text-xs font-normal font-['Roboto'] uppercase leading-3 tracking-widest">Main</div></Link>
-  <Link href="/gallery"><div className="Gallery left-[663px] top-[44.69px] absolute text-zinc-800 text-xs font-normal font-['Roboto'] uppercase leading-3 tracking-widest">GALLERY</div></Link>
-  <Link href="/project"><div className="Projects w-20 h-2.5 left-[789px] top-[45px] absolute text-zinc-800 text-xs font-normal font-['Roboto'] uppercase leading-3 tracking-widest">PROJECTS</div></Link>
-  <Link href="/contact"><div className="Contacts w-20 h-3 left-[1092px] top-[44.69px] absolute text-zinc-800 text-xs font-normal font-['Roboto'] uppercase leading-3 tracking-widest">CONTACTS</div></Link>
-  <Link href="/certification"> <div className="Certifications w-32 h-2.5 left-[920px] top-[45px] absolute text-zinc-800 text-xs font-normal font-['Roboto'] uppercase leading-3 tracking-widest">CERTIFICATIONS</div></Link>
-  <div className="Rectangle18 w-16 h-px left-[535px] top-[60.23px] absolute bg-zinc-800"></div>
-  <div className="Rectangle19 w-16 h-px left-[535px] top-[39.83px] absolute bg-zinc-800"></div>
-</div>
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  return (
+    <nav className="bg-white shadow-md">
+      <div className="flex justify-between items-center px-6 py-4 md:px-16 lg:px-24">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <img src="/Group 11.png" alt="Logo" className="w-15 h-10" />
+        </div>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex space-x-8 uppercase text-xs font-normal tracking-widest font-['Roboto']">
+       
+          <Link href="/"
+          
+            className=" text-zinc-800 hover:text-blue-600 border-y-2 border-slate-700">Main
+          </Link>
+          <Link href="/gallery"
+             className="text-zinc-800 hover:text-blue-600">Gallery
+          </Link>
+          <Link href="/project"
+          className="text-zinc-800 hover:text-blue-600">Projects
+          </Link>
+          <Link href="/certification"
+             className="text-zinc-800 hover:text-blue-600">Certifications
+          </Link>
+          <Link href="/contact"
+             className="text-zinc-800 hover:text-blue-600">Contacts
+          </Link>
+        </div>
+     
+        {/* Hamburger Icon */}
+        <button
+          className="md:hidden text-2xl text-zinc-800"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="flex flex-col items-center bg-white py-4 space-y-4 md:hidden uppercase text-sm font-normal tracking-widest font-['Roboto']">
+          <Link href="/"
+            onClick={() => setIsMenuOpen(false)} className="text-zinc-800 hover:text-blue-600">Main
+          </Link>
+          <Link href="/gallery"
+             onClick={() => setIsMenuOpen(false)} className="text-zinc-800 hover:text-blue-600">Gallery
+          </Link>
+          <Link href="/project"
+            onClick={() => setIsMenuOpen(false)} className="text-zinc-800 hover:text-blue-600">Projects
+          </Link>
+          <Link href="/certification"
+            onClick={() => setIsMenuOpen(false)} className="text-zinc-800 hover:text-blue-600">Certifications
+          </Link>
+          <Link href="/contact"
+            onClick={() => setIsMenuOpen(false)} className="text-zinc-800 hover:text-blue-600">Contacts
+          </Link>
+        </div>
+      )}
+    </nav>
   );
 };
 
