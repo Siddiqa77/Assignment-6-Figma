@@ -1,8 +1,5 @@
-import Image from 'next/image'
-// import Shape from '/shape.png'
-// import Shape1 from '/shape.png'
-// import Shape2 from '/shape.png'
-// import Shape3 from '/shape.png'
+
+
 import React from 'react'
 import { FaFacebookF, FaLinkedin, FaPhoneAlt, FaTwitter } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
