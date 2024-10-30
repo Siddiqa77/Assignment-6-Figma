@@ -1,5 +1,9 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Shape from '/shape.png'
+import Shape1 from '/shape.png'
+import Shape2 from '/shape.png'
+import Shape3 from '/shape.png'
+
 import React from 'react'
 
 const Footer = () => {
@@ -51,10 +55,10 @@ const Footer = () => {
           
           
           
-          <Image className=" hover:text-white transition" src="/shape.png" alt='' width={10} height={10}/>
-          <Image className=" hover:text-white transition" src="/shape1.png" alt='' width={18} height={10}/>
-          <Image className=" hover:text-white transition" src="/shape2.png" alt='' width={18} height={10}/>
-          <Image className=" hover:text-white transition" src="/shape3.png" alt='' width={18} height={10}/>
+          <Image className=" hover:text-white transition" src={Shape} alt='' width={10} height={10}/>
+          <Image className=" hover:text-white transition" src={Shape1} alt='' width={18} height={10}/>
+          <Image className=" hover:text-white transition" src={Shape2} alt='' width={18} height={10}/>
+          <Image className=" hover:text-white transition" src={Shape3} alt='' width={18} height={10}/>
           </div>
         </div>
       </div>
