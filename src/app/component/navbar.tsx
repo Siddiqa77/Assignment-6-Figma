@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Using icons for the hamburger and close buttons
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center px-6 py-4 md:px-16 lg:px-24">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="/Group 11.png" alt="Logo" className="w-15 h-10" />
+          <Image src="/Group 11.png" alt="Logo" width={70} height={60}/>
         </div>
 
         {/* Desktop Menu */}

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -28,15 +30,15 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-4">Contacts</h3>
           <ul className="space-y-2">
             <li className="flex items-center space-x-2">
-              <span className=" text-white"><img src="vector1.png" alt="location" /></span>
+              <span className=" text-white"><Image src="/vector1.png" alt="location" width={10} height={15}/></span>
               <span>1234 Sample Street, <br /> Austin, Texas 78704</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="material-icons text-white"><img src="Group.png" alt="phone" /></span>
+              <span className="material-icons text-white"><Image  src="/Group.png" alt="phone" width={15} height={10} /></span>
               <span>512.333.2222</span>
             </li>
             <li className="flex items-center space-x-2">
-              <span className="material-icons text-white"><img src="vector2.png" alt="email" /></span>
+              <span className="material-icons text-white"><Image src="/vector2.png" alt="email" width={15} height={10}/></span>
               <span>sampleemail@gmail.com</span>
             </li>
           </ul>
@@ -46,11 +48,13 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-4">Social Media</h3>
           <div className="flex space-x-4 text-xl">
-            <a href="#" className="hover:text-white transition"><img src="/shape.png" alt="facebook" /></a>
-            <a href="#" className="hover:text-white transition"><img src="/shape1.png" alt="twitter" /></a>
-            <a href="#" className="hover:text-white transition"><img src="/shape2.png" alt="linkedin" /></a>
-            <a href="#" className="hover:text-white transition"><img src="/shape3.png" alt="p" /></a>
-            
+          
+          
+          
+          <Image className=" hover:text-white transition" src="/shape.png" alt='' width={10} height={10}/>
+          <Image className=" hover:text-white transition" src="/shape1.png" alt='' width={18} height={10}/>
+          <Image className=" hover:text-white transition" src="/shape2.png" alt='' width={18} height={10}/>
+          <Image className=" hover:text-white transition" src="/shape3.png" alt='' width={18} height={10}/>
           </div>
         </div>
       </div>
